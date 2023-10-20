@@ -13,7 +13,7 @@ const Clock = () => {
 
   useEffect(() => {
     dispatch(getCountryListAction());
-  }, []);
+  }, [dispatch]);
 
   const fetchTime = async (country) => {
     if (country) {
