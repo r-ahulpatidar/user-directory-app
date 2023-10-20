@@ -13,7 +13,7 @@ const Clock = () => {
 
   useEffect(() => {
     dispatch(getCountryListAction());
-  }, [dispatch]);
+  }, []);
 
   const fetchTime = async (country) => {
     if (country) {
@@ -59,7 +59,7 @@ const Clock = () => {
         onChange={handleCountry}
         className="border border-black rounded-lg dark:bg-blue-300 h-[3rem]"
       >
-        <option value="">Select a country</option>
+        {/* <option value="">Select a country</option> */}
         {countries.map((country, index) => (
           <option key={index} value={country}>
             {country}
